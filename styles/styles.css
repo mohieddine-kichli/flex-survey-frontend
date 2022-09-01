@@ -1,13 +1,19 @@
 .form-content {
 
     display:flex;
+    flex-direction: column;
     background-color: lightgray;
     margin: 20px;
 }
 
+.form-content > div {
+
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
 .form-elem {
 
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     background-color: lightgray;
 }
@@ -25,4 +31,9 @@ body {
     text-align: center;
 }
 
+.form-elem > div {
 
+    flex-basis: 50%; 
+    flex-wrap: wrap;
+    margin-bottom: 2px
+}
