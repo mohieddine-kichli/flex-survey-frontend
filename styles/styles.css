@@ -1,0 +1,28 @@
+.form-content {
+
+    display:flex;
+    background-color: lightgray;
+    margin: 20px;
+}
+
+.form-elem {
+
+    display:flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+
+body {
+
+    background-color: grey;
+    margin:0
+
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+
