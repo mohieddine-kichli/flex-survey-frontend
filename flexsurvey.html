@@ -4,7 +4,7 @@
 
     <head>
 
-        <title>CSS Website Layout</title>
+        <title>Survey Form</title>
         <link rel="stylesheet" href="styles/styles.css">
 
     </head>
@@ -12,163 +12,189 @@
 
     <body>
 
-        <div class="form-content">
+        <form id="survey-form">
 
-            <p> Overall how satisfied are you with the product or service? </p>
+            <div class="form-content">
 
-            <div class="form-elem">
-                
-                <div>
-                    <input type="radio" id ="very-satisfied" name="product_satisfaction" value="Very Satisfied"> 
-                    <label for = "very-satisfied"> Very Satisfied </label> 
+                <div class="form-elem"> 
+
+                    <p class="questions">When did you use our service?</p>
                     
                 </div>
 
-                <div>
+                <input type="date" value="date_service">
 
-                    <input type="radio" id ="satisfied" name="product_satisfaction" value="Satisfied">
-                    <label for = "satisfied"> Satisfied </label> 
+                <div class="form-elem"><p class="questions"> Overall how satisfied are you with the product or service? </p></div>
+
+                <div class="form-elem">
+                    
+                    <div>
+                        <input type="radio" id ="very-satisfied" name="product_satisfaction" value="Very Satisfied"> 
+                        <label for = "very-satisfied"> Very Satisfied </label> 
+                        
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="satisfied" name="product_satisfaction" value="Satisfied">
+                        <label for = "satisfied"> Satisfied </label> 
+
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="neutral" name="product_satisfaction" value="Neutral">
+                        <label for = "neutral"> Neutral </label>
+                        
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="unsatisfied" name="product_satisfaction" value="Unsatisfied">
+                        <label for = "unsatisfied"> Unsatisfied </label>
+                        
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="very-unsatisfied" name="product_satisfaction" value="Very unsatisfied">
+                        <label for = "very-unsatisfied"> Very unsatisfied </label>
+
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="n/a" name="product_satisfaction" value="N/A">
+                        <label for = "n/a"> N/A </label> 
+
+                    </div>
 
                 </div>
 
-                <div>
+                <div class="form-elem"><p class="questions"> Did our product or service meet your expectations? </p></div>
 
-                    <input type="radio" id ="neutral" name="product_satisfaction" value="Neutral">
-                    <label for = "neutral"> Neutral </label>
-                     
-                </div>
+                <div class="form-elem">
+                    
+                    <div>
+                        <input type="radio" id ="yes" name="product_expectation" value="Yes">
+                        <label for = "yes"> Yes </label>
+                        
+                    </div>
 
-                <div>
+                    <div>
 
-                    <input type="radio" id ="unsatisfied" name="product_satisfaction" value="Unsatisfied">
-                    <label for = "unsatisfied"> Unsatisfied </label>
-                     
-                </div>
+                        <input type="radio" id ="no" name="product_expectation" value="No">
+                        <label for = "no"> No </label>
 
-                <div>
-
-                    <input type="radio" id ="very-unsatisfied" name="product_satisfaction" value="Very unsatisfied">
-                    <label for = "very-unsatisfied"> Very unsatisfied </label>
+                    </div>
 
                 </div>
+                
+                <div class="form-elem"><p class="questions"> Would you recommend this product or service to a friend? </p></div>
 
-                <div>
+                <div class="form-elem">
+                    
+                    <div>
+                        <input type="radio" id ="yes" name="product_recommendation" value="Yes">
+                        <label for = "yes"> Yes </label>
+                        
+                    </div>
 
-                    <input type="radio" id ="n/a" name="product_satisfaction" value="N/A">
-                    <label for = "n/a"> N/A </label> 
+                    <div>
+
+                        <input type="radio" id ="no" name="product_recommendation" value="No">
+                        <label for = "no"> No </label> 
+
+                    </div>
+
+                </div>
+
+                <div class="form-elem"><p class="questions"> What aspect of the product or service were you most satisfied by?</p></div>
+                
+                <div class="form-elem">
+                    
+                    <div>
+                        
+                        <input type="radio" id ="quality" name="product_aspects_most" value="Quality">
+                        <label for = "quality"> Quality </label> 
+                        
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="price" name="product_aspects_most" value="Price">
+                        <label for = "price"> Price </label>
+
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="customer_service" name="product_aspects_most" value="Customer serivce">
+                        <label for = "customer_serivce"> Customer service </label>
+
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="installation" name="product_aspects_most" value="Installation or first use experience">
+                        <label for = "installation"> Installation or first use experience </label>
+
+                    </div>
+
+                </div>
+                
+                <div class="form-elem"><p class="questions"> What aspect of the product or service were you least satisfied by?</p></div>
+
+                <div class="form-elem">
+                    
+                    <div>
+                        
+                        <input type="radio" id ="quality" name="product_aspects_most" value="Quality">
+                        <label for = "quality"> Quality </label> 
+                        
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="price" name="product_aspects_most" value="Price">
+                        <label for = "price"> Price </label>
+
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="customer_service" name="product_aspects_most" value="Customer serivce">
+                        <label for = "customer_serivce"> Customer service </label>
+
+                    </div>
+
+                    <div>
+
+                        <input type="radio" id ="installation" name="product_aspects_most" value="Installation or first use experience">
+                        <label for = "installation"> Installation or first use experience </label>
+
+                    </div>
+
+                </div>
+
+                <div class="form-elem"> <p class="questions"> Additional comments: </p></div>
+
+                
+                <div class="form-elem">
+
+                    <textarea class="textarea-container"name="additional-comments" form="survey-form" placeholder="Type here..."></textarea>
+
+                </div>
+                
+                <div class="horizontal-center"> 
+
+                    <input type="button" value="Submit">
 
                 </div>
 
             </div>
 
-            <p class="questions"> Did our product or service meet your expectations? </p>
-
-            <div class="form-elem">
-                
-                <div>
-                    <input type="radio" id ="yes" name="product_expectation" value="Yes">
-                    <label for = "yes"> Yes </label>
-                    
-                </div>
-
-                <div>
-
-                    <input type="radio" id ="no" name="product_expectation" value="No">
-                    <label for = "no"> No </label>
-
-                </div>
-
-            </div>
-            
-            <p> Would you recommend this product or service to a friend? </p>
-
-            <div class="form-elem">
-                
-                <div>
-                    <input type="radio" id ="yes" name="product_recommendation" value="Yes">
-                    <label for = "yes"> Yes </label>
-                    
-                </div>
-
-                <div>
-
-                    <input type="radio" id ="no" name="product_recommendation" value="No">
-                    <label for = "no"> No </label> 
-
-                </div>
-
-            </div>
-
-            <p> What aspect of the product or service were you most satisfied by?</p>
-            
-            <div class="form-elem">
-                
-                <div>
-                    
-                    <input type="radio" id ="quality" name="product_aspects_most" value="Quality">
-                    <label for = "quality"> Quality </label> 
-                    
-                </div>
-
-                <div>
-
-                    <input type="radio" id ="price" name="product_aspects_most" value="Price">
-                    <label for = "price"> Price </label>
-
-                </div>
-
-                <div>
-
-                    <input type="radio" id ="customer_service" name="product_aspects_most" value="Customer serivce">
-                    <label for = "customer_serivce"> Customer service </label>
-
-                </div>
-
-                <div>
-
-                    <input type="radio" id ="installation" name="product_aspects_most" value="Installation or first use experience">
-                    <label for = "installation"> Installation or first use experience </label>
-
-                </div>
-
-            </div>
-            
-            <p> What aspect of the product or service were you most satisfied by?</p>
-
-            <div class="form-elem">
-                
-                <div>
-                    
-                    <input type="radio" id ="quality" name="product_aspects_most" value="Quality">
-                    <label for = "quality"> Quality </label> 
-                    
-                </div>
-
-                <div>
-
-                    <input type="radio" id ="price" name="product_aspects_most" value="Price">
-                    <label for = "price"> Price </label>
-
-                </div>
-
-                <div>
-
-                    <input type="radio" id ="customer_service" name="product_aspects_most" value="Customer serivce">
-                    <label for = "customer_serivce"> Customer service </label>
-
-                </div>
-
-                <div>
-
-                    <input type="radio" id ="installation" name="product_aspects_most" value="Installation or first use experience">
-                    <label for = "installation"> Installation or first use experience </label>
-
-                </div>
-
-            </div>
-
-            
-        </div>
+        </form>
 
     </body>
 
